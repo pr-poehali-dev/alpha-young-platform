@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
+
 @layer base {
   :root {
+    /* Alfa Bank Brand Colors */
+    --alfa-red: 239 49 36;
+    --alfa-orange: 255 107 53;
+    --alfa-blue: 43 45 66;
+    --alfa-green: 141 153 174;
+    --alfa-gray: 237 242 244;
+    --alfa-light: 255 242 255;
+    --alfa-pink: 255 20 147;
+    --alfa-purple: 138 43 226;
+    --alfa-yellow: 255 215 0;
+    --alfa-cyan: 0 255 255;
+    
+    /* Default shadcn colors */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -13,7 +28,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 239 49 36;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -22,7 +37,7 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 255 107 53;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
@@ -30,7 +45,7 @@
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 239 49 36;
 
     --radius: 0.5rem;
 
@@ -52,17 +67,17 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 43 45 66;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 43 45 66;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 43 45 66;
     --popover-foreground: 210 40% 98%;
 
     --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary-foreground: 43 45 66;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -97,5 +112,24 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
   }
+}
+
+/* Custom gradient backgrounds */
+.gradient-alfa-primary {
+  background: linear-gradient(135deg, rgb(239, 49, 36) 0%, rgb(255, 107, 53) 100%);
+}
+
+.gradient-alfa-secondary {
+  background: linear-gradient(135deg, rgb(43, 45, 66) 0%, rgb(141, 153, 174) 100%);
+}
+
+.gradient-alfa-vibrant {
+  background: linear-gradient(135deg, rgb(255, 20, 147) 0%, rgb(138, 43, 226) 50%, rgb(0, 255, 255) 100%);
+}
+
+/* Typography */
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }

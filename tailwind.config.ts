@@ -25,7 +25,11 @@ export default {
 					blue: '#2B2D42',
 					green: '#8D99AE',
 					gray: '#EDF2F4',
-					light: '#FFF2FF'
+					light: '#FFF2FF',
+					pink: '#FF1493',
+					purple: '#8A2BE2',
+					yellow: '#FFD700',
+					cyan: '#00FFFF'
 				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
